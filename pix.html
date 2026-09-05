@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>PIX - Cleiton & Giovana</title>
+
+  <link rel="stylesheet" href="pixcss.css">
+</head>
+
+<body>
+
+  <main class="pagina-pix">
+
+    <header class="cabecalho-pix">
+
+      <div class="monograma">
+        C | G
+      </div>
+
+      <h1>
+        Colabore com nosso
+        <span>casamento</span>
+      </h1>
+
+      <div class="detalhe">
+        <span></span>
+        ♥
+        <span></span>
+      </div>
+
+      <p>
+        Se desejar nos presentear, você pode contribuir via PIX.
+        <br>
+        Qualquer valor será recebido com muito carinho. 💙
+      </p>
+
+    </header>
+
+
+    <section class="pix-card">
+
+      <h2>ESCANEIE E PRESENTEIE</h2>
+
+      <img src="imagens/qr code site.jpeg" alt="QR Code PIX" class="qrcode-pix">
+
+
+      <div class="separador">
+        <span></span>
+        <p>ou</p>
+        <span></span>
+      </div>
+
+
+      <h3>CHAVE PIX</h3>
+
+      <div class="campo-chave">
+
+        <p id="chavePix">
+          d8a016b8-7b3b-4d14-ae7f-c4e39dbd4875
+        </p>
+
+      </div>
+
+
+      <button onclick="copiarPix()">
+        COPIAR CHAVE PIX
+      </button>
+
+
+      <p id="mensagemPix"></p>
+
+
+      <div class="pix-copia-cola">
+
+        <h3>PIX COPIA E COLA</h3>
+
+        <p>
+          Copie a chave acima e cole no aplicativo
+          do seu banco para fazer sua contribuição.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <footer class="rodape-pix">
+
+      <h2>Obrigado!</h2>
+
+      <p>Com carinho,</p>
+
+      <h3>Cleiton & Geovanna</h3>
+
+    </footer>
+
+  </main>
+
+
+  <script>
+
+    function copiarPix() {
+
+      const chave =
+        document.getElementById('chavePix').innerText
+
+      navigator.clipboard.writeText(chave)
+
+      document.getElementById('mensagemPix').innerText =
+        '✓ Chave PIX copiada com sucesso!'
+
+    }
+
+  </script>
+
+</body>
+
+</html>

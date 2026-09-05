@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, #123568 0%, #071a3d 45%, #031129 100%);
+
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+
+/* PÁGINA */
+
+.pagina-pix {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 40px 20px 30px;
+
+  text-align: center;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho-pix {
+  width: 100%;
+  max-width: 700px;
+}
+
+.monograma {
+  width: 120px;
+  height: 120px;
+
+  margin: 0 auto 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #d8aa4f;
+  border-radius: 50%;
+
+  color: #e6b75b;
+
+  font-family: Georgia, serif;
+  font-size: 36px;
+
+  letter-spacing: 5px;
+
+  box-shadow: 0 0 20px rgba(216, 170, 79, 0.15);
+}
+
+
+.cabecalho-pix h1 {
+  font-family: Georgia, serif;
+
+  font-size: 42px;
+  font-weight: 400;
+
+  line-height: 1;
+
+  margin-bottom: 20px;
+}
+
+
+.cabecalho-pix h1 span {
+  display: block;
+
+  color: #e6b75b;
+
+  font-size: 62px;
+
+  margin-top: 5px;
+}
+
+
+.cabecalho-pix p {
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  color: #f3f3f3;
+
+  margin-bottom: 35px;
+}
+
+
+/* DETALHE DO CORAÇÃO */
+
+.detalhe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: #d8aa4f;
+
+  font-size: 18px;
+
+  margin-bottom: 20px;
+}
+
+
+.detalhe span {
+  width: 100px;
+  height: 1px;
+
+  background-color: #d8aa4f;
+}
+
+
+/* CARD PRINCIPAL */
+
+.pix-card {
+  width: 100%;
+  max-width: 620px;
+
+  background: linear-gradient(
+    145deg,
+    #fffdf8,
+    #f4ecdd
+  );
+
+  color: #081934;
+
+  padding: 35px 30px;
+
+  border-radius: 28px;
+
+  border: 2px solid #d8aa4f;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+
+/* TÍTULO DO CARD */
+
+.pix-card > h2 {
+  display: inline-block;
+
+  background-color: #071a3d;
+  color: #e6b75b;
+
+  padding: 13px 30px;
+
+  border-radius: 12px;
+
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 500;
+
+  margin-bottom: 25px;
+}
+
+
+/* QR CODE */
+
+.qrcode-pix {
+  width: 230px;
+  max-width: 90%;
+  height: auto;
+
+  display: block;
+
+  margin: 0 auto 30px;
+
+  padding: 12px;
+
+  background-color: white;
+
+  border-radius: 16px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* SEPARADOR "OU" */
+
+.separador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin: 10px 0 25px;
+}
+
+
+.separador span {
+  width: 120px;
+  max-width: 30%;
+  height: 1px;
+
+  background-color: #c99b43;
+}
+
+
+.separador p {
+  font-family: Georgia, serif;
+
+  font-size: 25px;
+
+  color: #071a3d;
+}
+
+
+/* CHAVE PIX */
+
+.pix-card > h3 {
+  display: inline-block;
+
+  background-color: #071a3d;
+  color: #e6b75b;
+
+  padding: 10px 30px;
+
+  border-radius: 10px;
+
+  font-family: Georgia, serif;
+
+  font-size: 18px;
+
+  margin-bottom: 15px;
+}
+
+
+.campo-chave {
+  width: 100%;
+
+  padding: 18px;
+
+  margin-bottom: 20px;
+
+  background-color: #fffaf0;
+
+  border: 1px solid #d8aa4f;
+
+  border-radius: 12px;
+}
+
+
+#chavePix {
+  color: #071a3d;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  word-break: break-all;
+}
+
+
+/* BOTÃO */
+
+.pix-card button {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 16px 20px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #d5a547,
+    #f1c76d,
+    #c89432
+  );
+
+  color: #071a3d;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  box-shadow: 0 8px 18px rgba(145, 101, 22, 0.3);
+}
+
+
+.pix-card button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 25px rgba(145, 101, 22, 0.4);
+}
+
+
+/* MENSAGEM DE CÓPIA */
+
+#mensagemPix {
+  min-height: 24px;
+
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  color: #23883c;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+/* PIX COPIA E COLA */
+
+.pix-copia-cola {
+  margin-top: 10px;
+
+  padding: 20px;
+
+  background-color: #071a3d;
+
+  color: white;
+
+  border-radius: 15px;
+
+  border: 1px solid #d8aa4f;
+
+  text-align: left;
+}
+
+
+.pix-copia-cola h3 {
+  color: #e6b75b;
+
+  font-family: Georgia, serif;
+
+  font-size: 20px;
+
+  margin-bottom: 8px;
+}
+
+
+.pix-copia-cola p {
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  color: #eeeeee;
+}
+
+
+/* RODAPÉ */
+
+.rodape-pix {
+  margin-top: 35px;
+}
+
+
+.rodape-pix h2 {
+  font-family: Georgia, serif;
+
+  color: #e6b75b;
+
+  font-size: 38px;
+
+  font-style: italic;
+
+  margin-bottom: 10px;
+}
+
+
+.rodape-pix p {
+  font-size: 15px;
+
+  margin-bottom: 5px;
+
+  color: #eeeeee;
+}
+
+
+.rodape-pix h3 {
+  font-family: Georgia, serif;
+
+  color: #e6b75b;
+
+  font-size: 27px;
+
+  font-weight: 400;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+  .pagina-pix {
+    padding: 30px 15px;
+  }
+
+
+  .monograma {
+    width: 95px;
+    height: 95px;
+
+    font-size: 29px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .cabecalho-pix h1 {
+    font-size: 31px;
+  }
+
+
+  .cabecalho-pix h1 span {
+    font-size: 47px;
+  }
+
+
+  .cabecalho-pix p {
+    font-size: 15px;
+  }
+
+
+  .pix-card {
+    padding: 25px 18px;
+
+    border-radius: 22px;
+  }
+
+
+  .pix-card > h2 {
+    font-size: 16px;
+
+    padding: 11px 18px;
+  }
+
+
+  .qrcode-pix {
+    width: 200px;
+  }
+
+
+  #chavePix {
+    font-size: 15px;
+  }
+
+
+  .pix-card button {
+    font-size: 15px;
+  }
+
+
+  .rodape-pix h2 {
+    font-size: 32px;
+  }
+
+
+  .rodape-pix h3 {
+    font-size: 23px;
+  }
+
+}
