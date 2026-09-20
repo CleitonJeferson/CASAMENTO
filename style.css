@@ -211,6 +211,8 @@ main{
     width: 140px;
     height: 140px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .sessao-nome h1{
