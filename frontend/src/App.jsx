@@ -14,7 +14,7 @@ function App() {
     return
   }
 
-  const resposta = await fetch('http://localhost:3000/confirmar', {
+    const resposta = await fetch('https://casamento-github.a8kmoe.easypanel.host/confirmar', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -22,7 +22,7 @@ function App() {
     body: JSON.stringify({
       nome: nome
     })
-  })
+  });
 
   const respostaServidor = await resposta.text()
 
