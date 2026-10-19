@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
@@ -76,6 +76,13 @@ main{
     text-align: center;
     z-index: 10;
     color: #001F54;
+}
+
+@font-face {
+    font-family: "Great Vibes";
+    src: url("./fonts/GreatVibes-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 .header-slider .titulo-inicial{
