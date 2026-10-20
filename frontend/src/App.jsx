@@ -13,7 +13,6 @@ function App() {
     setMensagem('Digite seu nome e sobrenome.')
     return
   }
-
     const resposta = await fetch('https://casamento-github.a8kmoe.easypanel.host/confirmar', {
     method: 'POST',
     headers: {
