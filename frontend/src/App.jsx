@@ -30,7 +30,7 @@ function App() {
   setTimeout(() => {
   window.location.href =
     `https://nosso-sim.netlify.app/index.html?confirmado=${encodeURIComponent(nome)}`
-}, 3000)
+}, 3000);
 }
 
   return (
