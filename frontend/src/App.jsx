@@ -28,10 +28,7 @@ const respostaServidor = await resposta.text();
 
 setMensagem(respostaServidor);
 
-setTimeout(() => {
-   window.location.replace =
-     `https://nosso-sim.netlify.app/?confirmado=${encodeURIComponent(nome)}`;
-}, 3000);
+
 
 }
 
