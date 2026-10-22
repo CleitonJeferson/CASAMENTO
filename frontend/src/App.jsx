@@ -77,6 +77,5 @@ const confirmarPresenca = async () => {
       <img src={ondas} className='ondas' alt="" />
     </>
   )
-}
 
 export default App
