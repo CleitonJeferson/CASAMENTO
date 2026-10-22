@@ -30,7 +30,7 @@ setMensagem(respostaServidor);
 
 setTimeout(() => {
   window.location.href =
-    `https://nosso-sim.netlify.app/index.html?confirmado=${encodeURIComponent(nome)}`;
+    `https://nosso-sim.netlify.app/?confirmado=${encodeURIComponent(nome)}`;
 }, 3000);
 
 }
