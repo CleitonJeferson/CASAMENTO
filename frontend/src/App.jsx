@@ -23,14 +23,16 @@ function App() {
     })
   });
 
-  const respostaServidor = await resposta.text()
+  
+const respostaServidor = await resposta.text();
 
-  setMensagem(respostaServidor)
+setMensagem(respostaServidor);
 
-  setTimeout(() => {
+setTimeout(() => {
   window.location.href =
-    `https://nosso-sim.netlify.app/index.html?confirmado=${encodeURIComponent(nome)}`
+    `https://nosso-sim.netlify.app/index.html?confirmado=${encodeURIComponent(nome)}`;
 }, 3000);
+
 }
 
   return (
