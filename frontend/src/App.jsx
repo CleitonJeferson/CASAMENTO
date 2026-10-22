@@ -8,30 +8,44 @@ function App() {
 
   const [mensagem, setMensagem] = useState('')
 
-  const confirmarPresenca = async () => {
-    if (nome.trim() === '') {
-    setMensagem('Digite seu nome e sobrenome.')
-    return
+
+const confirmarPresenca = async () => {
+  if (nome.trim() === '') {
+    setMensagem('Digite seu nome e sobrenome.');
+    return;
   }
-    const resposta = await fetch('https://casamento-github.a8kmoe.easypanel.host/confirmar', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      nome: nome
-    })
-  });
 
-  
-const respostaServidor = await resposta.text();
+  try {
+    const resposta = await fetch(
+      'https://casamento-github.a8kmoe.easypanel.host/confirmar',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          nome: nome.trim()
+        })
+      }
+    );
 
-setMensagem(respostaServidor);
+    const respostaServidor = await resposta.text();
+    setMensagem(respostaServidor);
 
-setTimeout(() => {
-  window.location.href =
-    `https://nosso-sim.netlify.app/?confirmado=${encodeURIComponent(nome)}`;
-}, 3000);
+    if (!resposta.ok) {
+      return;
+    }
+
+    setTimeout(() => {
+      window.location.href =
+        `https://nosso-sim.netlify.app/?confirmado=${encodeURIComponent(nome.trim())}`;
+    }, 3000);
+
+  } catch (erro) {
+    setMensagem('Não foi possível confirmar. Tente novamente.');
+    console.error(erro);
+  }
+};
 
 }
 
